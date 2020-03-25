@@ -73,10 +73,7 @@ Aplikacija Coppadoro služi za online kupovinu I pregled filmova, korisnik inici
  
  Gost
 - Registrovanje korisnika 
-- Pretraživanje filmova, glumaca, reditelja
-- Mogućnost da korisnik vidi kratak opis filma kao I osnovne informacije o filmu(žanr, glumce, reditelj, trajanje, ocjenu , komentare…)
-- Pretraživanje korisnika
-- Sortiranje filmova 
+- Mogućnost da vidi sa kojim filmovima videoteka raspolaže
 
 Korisnik
 - Prijava korisnika
@@ -102,7 +99,7 @@ Administrator
 2. Korisnik  
    * Korisnik aplikacije je osoba koja se registrovala na sistem I ima mogućnost kupovine filma, pravljenje liste filmova koje ima u planu da pogleda, pregleda ostalih korisnika te traženja korisnika i filmova.
 3. Gost 
-   * Gosti na ovom sajtu su potencijalni korisnici koji će moći vidjeti sve kao I korisnik , ali neće moći kupovati filmove, ocjenjivati, komentarisati..
+   * Gosti na ovom sajtu su potencijalni korisnici koji će moći vidjeti kojim filmovima raspolaže aplikacija
 4. Sistem 
    * Sadrži informacije o filmovima, listama želja korisnika, listama filmova koje je korisnik pregledao
 
