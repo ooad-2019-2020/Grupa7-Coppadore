@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ActivityDiagram",
-    "\\Scenarij\\kupovina filma"
+    "\\ActivityDiagram\\prijava"
   ],
-  "SelectedNode": "\\ActivityDiagram\\komentarisanje",
+  "SelectedNode": "\\ActivityDiagram",
   "PreviewInSolutionExplorer": false
 }
