@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ActivityDiagram",
+    "\\ActivityDiagram\\Kupovina filma"
   ],
+  "SelectedNode": "\\ActivityDiagram\\Kupovina filma\\kupovina.jpg",
   "PreviewInSolutionExplorer": false
 }
