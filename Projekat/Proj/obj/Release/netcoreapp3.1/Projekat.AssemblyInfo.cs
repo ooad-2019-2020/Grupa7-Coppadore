@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-Projekat-9D1363D1-A433-4915-AFA7-DCF80576614F")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Projekat")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
