@@ -54,10 +54,7 @@ Aplikacija Coppadoro služi za online kupovinu I pregled filmova, korisnik inici
        Ukoliko korisnik poželi kupiti film može to uraditi preko platnog procesora(paypala) ili preko 
        debitne kartice tako sto unese korektne podatke za isti, te tako korisnik moze skinuti film koji 
        je kupio kada hoće I koliko puta hoce
-* Pozivanje gosta
-        
-        Ukoliko gost postane korisnik ovog sajta inicijativu već registrovanog korisnika , taj korisnik 
-        moze ostvariti popust na bilo koji film koji krisnik želi kupiti
+
  * Sortiranje filmova
        
        Korisnik može sortirati filmove recimo(datum –najnoviji, najstariji ili cijena- najniža- najviša)
@@ -83,7 +80,6 @@ Korisnik
 - Ocjenjivanje filmova
 - Komentarisanje filmova
 - Kupovanje filmova
-- Pozivanje gosta 
 - Sortiranje filmova
 - Preuzimanje kupljenog filma 
 
