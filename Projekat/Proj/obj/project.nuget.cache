@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KvGO9EdpRJtewychT6JNihX+7pW8rdjw0g4BXLUSMzwc6fzW2jYMa+MslB1O5Z8L1UpLrk7pOGvlswRY2TVj8Q==",
+  "dgSpecHash": "bzAQtJzk3UsW4hTR1f9aR5xMs1eEo/t2FUKtaOfpL2AAfkEtcwCf4JfvvGviN6PSoyRTESolQHwMGqPXpjYL6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DT User\\source\\repos\\Grupa7-Coppadore\\Projekat\\Proj\\Projekat.csproj",
+  "projectFilePath": "C:\\Users\\DT User\\Source\\Repos\\Grupa7-Coppadore\\Projekat\\Proj\\Projekat.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DT User\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.3\\microsoft.aspnetcore.cryptography.internal.3.1.3.nupkg.sha512",
     "C:\\Users\\DT User\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.3\\microsoft.aspnetcore.cryptography.keyderivation.3.1.3.nupkg.sha512",
