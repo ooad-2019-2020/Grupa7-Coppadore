@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Projekat.Models.Film>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.naziv)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.trajanje)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ocjena)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.godinaFilma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.brojOcjena)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.opisFilma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.reziser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cijena)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.poster)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.link)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.naziv)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.trajanje)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ocjena)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.godinaFilma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.brojOcjena)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.opisFilma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.reziser)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cijena)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.poster)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.link)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.FilmID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.FilmID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.FilmID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

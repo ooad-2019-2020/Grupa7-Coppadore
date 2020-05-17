@@ -1,0 +1,78 @@
+﻿@model Projekat.Models.Film
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Film</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.naziv)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.naziv)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.trajanje)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.trajanje)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ocjena)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ocjena)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.godinaFilma)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.godinaFilma)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.brojOcjena)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.brojOcjena)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.opisFilma)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.opisFilma)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.reziser)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.reziser)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.cijena)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.cijena)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.poster)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.poster)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.link)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.link)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.FilmID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
