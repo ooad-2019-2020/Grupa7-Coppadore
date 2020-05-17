@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Projekat.Models;
 
-namespace AspNetCoreMVC.Models
+namespace Projekat.Models
 {
-    public class OOADContext : DbContext
+    public class CDContext : DbContext
     {
-        public OOADContext(DbContextOptions<OOADContext> options) : base(options)
+        public CDContext(DbContextOptions<CDContext> options) : base(options)
         {
         }
         public DbSet<Korisnik> Korisnik { get; set; }
