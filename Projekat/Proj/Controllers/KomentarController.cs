@@ -53,7 +53,7 @@ namespace Projekat.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("KomentarID,komentar,datum")] Komentar komentar)
+        public async Task<IActionResult> Create([Bind("KomentarID,komentarTekst,datum")] Komentar komentar)
         {
             if (ModelState.IsValid)
             {

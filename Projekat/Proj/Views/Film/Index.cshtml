@@ -27,20 +27,11 @@
             <th>
                 @Html.DisplayNameFor(model => model.brojOcjena)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.opisFilma)
-            </th>
-            <th>
+             <th>
                 @Html.DisplayNameFor(model => model.reziser)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.cijena)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.poster)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.link)
             </th>
             <th></th>
         </tr>
@@ -64,19 +55,10 @@
                 @Html.DisplayFor(modelItem => item.brojOcjena)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.opisFilma)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.reziser)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.cijena)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.poster)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.link)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.FilmID">Edit</a> |

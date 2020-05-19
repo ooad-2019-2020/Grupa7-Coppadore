@@ -37,7 +37,7 @@ namespace Projekat.Migrations
                 {
                     KomentarID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    komentar = table.Column<string>(nullable: true),
+                    komentarTekst = table.Column<string>(nullable: true),
                     datum = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
