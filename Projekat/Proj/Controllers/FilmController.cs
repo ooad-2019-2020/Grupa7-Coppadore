@@ -60,6 +60,8 @@ namespace Projekat.Controllers
             {
                 return NotFound();
             }
+            ViewBag.podatak = film.poster;
+
 
           //  VarGlobal.PickedMovieID = id;
             return View(film);
