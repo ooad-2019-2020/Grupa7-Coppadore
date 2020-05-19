@@ -48,6 +48,23 @@ namespace Projekat.Controllers
             return View();
         }
 
+        public async Task<IActionResult> Base(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var film = await _context.Film.FindAsync(id);
+            if (film == null)
+            {
+                return NotFound();
+            }
+
+          //  VarGlobal.PickedMovieID = id;
+            return View(film);
+        }
+
         // POST: Film/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.

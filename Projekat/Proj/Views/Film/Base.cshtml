@@ -1,0 +1,169 @@
+﻿
+@using Projekat.Models
+@model Film
+<br />
+<div class="row">
+    <div class="col-md-4">
+
+        <section id="picture">
+            <img src="https://img.yts.mx/assets/images/movies/Borat_2006/medium-cover.jpg" alt="Sample Image" width="300" height="500" />
+
+        </section>
+    </div>
+    <text value=VarGlobal.>
+
+    </text>
+
+    <div class="col-md-6">
+
+        <section id="informations">
+
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.naziv, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.naziv, new { @class = "form-control", @readonly = "readonly" })
+                    @Html.ValidationMessageFor(m => m.naziv, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div class="form-group">
+                @Html.LabelFor(m => m.godinaFilma, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.godinaFilma, new { @class = "form-control", @readonly = "readonly" })
+                    @Html.ValidationMessageFor(m => m.godinaFilma, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+            <br />
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.ocjena, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.ocjena, new { @class = "form-control", @readonly = "readonly" })
+                    @Html.ValidationMessageFor(m => m.ocjena, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+            <br />
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.trajanje, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.trajanje, new { @class = "form-control", @readonly = "readonly" })
+                    @Html.ValidationMessageFor(m => m.trajanje, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+            <br />
+
+            
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.reziser, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.reziser, new { @class = "form-control", @readonly = "readonly" })
+                    @Html.ValidationMessageFor(m => m.reziser, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+            <br />
+
+           
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.cijena, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.cijena, new { @class = "form-control", @readonly = "readonly" })
+                    @Html.ValidationMessageFor(m => m.cijena, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+            <br />
+
+        </section>
+
+    </div>
+
+
+
+    <section id="description">
+        <div class="col-md-6">
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.opisFilma, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextAreaFor(m => m.opisFilma, new { @class = "form-control", @readonly = "readonly" })
+                    @Html.ValidationMessageFor(m => m.opisFilma, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+</div>
+
+<br />
+<br />
+<div class="row">
+    <div class="col-md-4">
+        <section id="Ocjene">
+            <div class="col-md-offset-3 col-md-10">
+                <label title="text">Add a rate</label>
+            </div>
+            <div>
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4</label>
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5</label>
+                    <input type="radio" id="star6" name="rate" value="6" />
+                    <label for="star6" title="text">6</label>
+                    <input type="radio" id="star7" name="rate" value="7" />
+                    <label for="star7" title="text">7</label>
+                    <input type="radio" id="star8" name="rate" value="8" />
+                    <label for="star8" title="text">8</label>
+                    <input type="radio" id="star9" name="rate" value="9" />
+                    <label for="star9" title="text">9</label>
+                    <input type="radio" id="star10" name="rate" value="10" />
+                    <label for="star10" title="text">10</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-3 col-md-10">
+                    <input type="submit" value="Buy" class="btn btn-primary" onclick="location.href='@Url.Action("PurchaseMovie","Purchase")'" />
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-md-4">
+
+        <div class="form-group">
+            <div class="col-md-offset-5 col-md-8">
+                <input type="submit" value="Add on wishlist" class="btn btn-primary" />
+            </div>
+        </div>
+        <br />
+        <br />
+
+        <div class="form-group">
+            <div class="col-md-offset-5 col-md-12">
+                <input type="submit" value="Add on watched list" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
