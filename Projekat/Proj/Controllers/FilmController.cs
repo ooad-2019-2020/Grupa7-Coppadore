@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -19,10 +20,38 @@ namespace Projekat.Controllers
         }
 
         // GET: Film
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string upit)
         {
-            return View(await _context.Film.ToListAsync());
+            var filmovi = _context.Film.AsQueryable();
+
+            if (!string.IsNullOrEmpty(upit))
+            {
+                filmovi = filmovi.Where(x => x.naziv.Contains(upit));
+            }
+
+
+            return View(await filmovi.ToListAsync());
         }
+
+
+
+        public async Task<IActionResult> Browse(string upit)
+        {
+            var filmovi = _context.Film.AsQueryable();
+
+            if (!string.IsNullOrEmpty(upit))
+            {
+                filmovi = filmovi.Where(x => x.naziv.Contains(upit));
+            }
+
+
+            return View(await filmovi.ToListAsync());
+        }
+
+
+
+
+
 
         // GET: Film/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -48,6 +77,7 @@ namespace Projekat.Controllers
             return View();
         }
 
+     
         public async Task<IActionResult> Base(int? id)
         {
             if (id == null)

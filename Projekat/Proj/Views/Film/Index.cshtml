@@ -6,6 +6,20 @@
 
 <h1>Lista filmova</h1>
 
+
+
+
+
+<form asp-controller="Film" asp-action="Index">
+    <p>
+
+        Pretraga: <input type="text" name="upit" />
+        <input type="submit" value="Pretrazi" />
+    </p>
+
+
+</form>
+
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -27,7 +41,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.brojOcjena)
             </th>
-             <th>
+            <th>
                 @Html.DisplayNameFor(model => model.reziser)
             </th>
             <th>
@@ -37,36 +51,37 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.naziv)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.trajanje)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ocjena)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.godinaFilma)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.brojOcjena)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.reziser)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.cijena)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.FilmID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.FilmID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.FilmID">Delete</a> |
-                <a asp-action="Base" asp-route-id="@item.FilmID">Base</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.naziv)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.trajanje)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ocjena)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.godinaFilma)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.brojOcjena)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.reziser)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.cijena)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.FilmID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.FilmID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.FilmID">Delete</a> |
+                    <a asp-action="Base" asp-route-id="@item.FilmID">Base</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

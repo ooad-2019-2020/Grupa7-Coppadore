@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Projekat.Models.Film>
+@{
+    ViewData["Title"] = "Browse";
+
+
+
+
+    var eachFilm = ViewData["listaFilmova"] as Projekat.Models.Film;
+
+}
+
+
+
+
+<form asp-controller="Film" asp-action="Index">
+    <p>
+
+        Pretraga: <input type="text" name="upit" />
+        <input type="submit" value="Pretrazi" />
+    </p>
+
+
+</form>
+
+
+
+
+
+
+
+
+
+<section>
+    <div class="row">
+
+
+
+
+        @foreach (var item in Model)
+        {
+            <div class="browse-movie-wrap col-xs-10 col-sm-4 col-md-5 col-lg-4">
+                <a href="https://yts.mx/movie/spiritual-kung-fu-1978" class="browse-movie-link">
+                    <figure>
+                        <img class="img-responsive" src=@item.poster alt="Spiritual Kung Fu (1978) download" width="170" height="255">
+                    </figure>
+                </a>
+                <div class="browse-movie-bottom">
+                    <a href="https://yts.mx/movie/spiritual-kung-fu-1978" class="browse-movie-title">@item.naziv</a>
+                    <div class="browse-movie-year">@item.godinaFilma</div>
+                </div>
+            </div>
+        }
+
+
+
+
+
+    </div>
+</section>
+
+
+
+
